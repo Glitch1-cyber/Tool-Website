@@ -3,175 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Official Website for Fake Identity Generator</title>
+    <title>Fake Identity Generator Tool</title>
     <style>
         /* Global Styles */
-        body {
-            font-family: Arial, sans-serif;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            font-family: 'Arial', sans-serif;
             background-color: #000;
             color: #fff;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
+            height: 100%;
         }
 
-        h1, h2 {
-            margin: 0;
-            padding: 0;
-            font-family: 'Roboto', sans-serif;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
         }
 
-        /* Header */
+        /* Header Section */
         header {
-            background-color: #e60000;
-            color: #fff;
-            padding: 40px 20px;
             text-align: center;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+            padding-bottom: 50px;
         }
 
         header h1 {
-            font-size: 3.5em;
+            font-size: 3.5rem;
+            color: #e60000;
             font-weight: bold;
             letter-spacing: 2px;
         }
 
-        /* Main Content */
-        .content {
-            padding: 60px 20px;
-            text-align: center;
-            max-width: 900px;
-            margin: 0 auto;
+        header p {
+            font-size: 1.2rem;
+            color: #bbb;
+            margin-top: 10px;
         }
 
-        .card {
+        /* Section Styles */
+        .section {
+            margin-bottom: 50px;
+            padding: 40px;
             background-color: #111;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            padding: 30px;
-            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         }
 
-        .card h2 {
+        .section h2 {
+            font-size: 2.5rem;
             color: #e60000;
-            font-size: 2.5em;
             margin-bottom: 20px;
+            text-align: center;
         }
 
-        .card p {
-            font-size: 1.2em;
-            margin-bottom: 20px;
+        .section p, .section ul {
+            font-size: 1.1rem;
+            line-height: 1.8;
             color: #ccc;
+            text-align: center;
         }
 
-        .card ul {
-            text-align: left;
-            margin: 0 auto;
+        .section ul {
+            list-style: none;
             padding: 0;
-            font-size: 1.1em;
-            color: #ddd;
-            max-width: 700px;
         }
 
-        .card ul li {
+        .section ul li {
             margin: 10px 0;
         }
 
-        .btn {
+        /* Button Styles */
+        .cta-btn {
             display: inline-block;
             background-color: #e60000;
             color: white;
             padding: 15px 30px;
-            font-size: 1.2em;
+            font-size: 1.4rem;
             font-weight: bold;
             text-decoration: none;
             border-radius: 50px;
+            margin-top: 30px;
+            text-align: center;
             transition: background-color 0.3s ease, transform 0.2s ease;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        .btn:hover {
+        .cta-btn:hover {
             background-color: #b30000;
             transform: scale(1.05);
         }
 
-        .btn:active {
+        .cta-btn:active {
             transform: scale(0.98);
         }
 
-        /* Footer */
-        footer {
-            background-color: #111;
-            color: #e60000;
-            padding: 15px;
+        /* Card Styles */
+        .feature-cards {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .feature-card {
+            background-color: #222;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: 48%;
             text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            font-size: 1em;
+        }
+
+        .feature-card h3 {
+            font-size: 1.8rem;
+            color: #e60000;
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            font-size: 1.2rem;
+            color: #bbb;
         }
 
         /* Responsive Styles */
         @media (max-width: 768px) {
+            .feature-card {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
             header h1 {
-                font-size: 2.5em;
+                font-size: 2.8rem;
             }
 
-            .card h2 {
-                font-size: 2em;
+            .section h2 {
+                font-size: 2rem;
             }
 
-            .card p {
-                font-size: 1em;
+            .section p {
+                font-size: 1rem;
             }
 
-            .btn {
+            .cta-btn {
                 padding: 12px 25px;
-                font-size: 1.1em;
+                font-size: 1.2rem;
             }
         }
     </style>
 </head>
 <body>
 
+<!-- Main Container -->
+<div class="container">
+
+    <!-- Header Section -->
     <header>
-        <h1>Fake Identity Generator</h1>
+        <h1>Fake Identity Generator Tool</h1>
+        <p>Generate random fake identities, passwords, and more for testing, writing, or research purposes.</p>
     </header>
 
-    <div class="content">
-        <div class="card">
-            <h2>Welcome to the Official Site!</h2>
-            <p>Our Fake Identity Generator allows you to create random, fictional identities for various purposes like testing, creative writing, or research.</p>
-            <p>The generator can create random names, email addresses, phone numbers, and more. It's designed to be fast and easy to use, giving you the results you need in seconds.</p>
-        </div>
-
-        <div class="card">
-            <h2>How it works:</h2>
-            <ul>
-                <li>Generate a name, address, and other details quickly.</li>
-                <li>Customize your generated identity by specifying certain parameters like gender, location, etc.</li>
-                <li>Perfect for developers, writers, or anyone who needs random identity data.</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h2>What you get:</h2>
-            <p>Once you click the button below, you will download a ZIP file containing the following:</p>
-            <ul>
-                <li>The Python script to generate random identities.</li>
-                <li>An Icon to use for the Python file</li>
-                <li>All necessary dependencies for running the script locally.</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <a href="Tool-Files.zip" class="btn" download>Download Python Files</a>
+    <!-- What the Tool Can Do Section -->
+    <div class="section">
+        <h2>What Can This Tool Do?</h2>
+        <p>This tool offers various functions to help you create fake identities and generate secure passwords.</p>
+        <div class="feature-cards">
+            <!-- Feature 1: Fake Identity Generator -->
+            <div class="feature-card">
+                <h3>Fake Identity Generator</h3>
+                <p>Create fully randomized fake identities with names, ages, addresses, and life stories.</p>
+            </div>
+            <!-- Feature 2: Password Generator -->
+            <div class="feature-card">
+                <h3>Password Generator</h3>
+                <p>Generate strong and secure passwords in an instant with custom length and complexity.</p>
+            </div>
+            <!-- Feature 3: Hasher Tool -->
+            <div class="feature-card">
+                <h3>Hasher Tool</h3>
+                <p>Hash your texts securely using popular algorithms like SHA-256 and MD5.</p>
+            </div>
         </div>
     </div>
 
-    <footer>
-        <p>&copy; 2025 Fake Identity Generator. All rights reserved.</p>
-    </footer>
+    <!-- Install Section -->
+    <div class="section">
+        <h2>How to Install the Tool</h2>
+        <p>To get started, simply download the tool by clicking the button below. Follow the installation instructions in the documentation.</p>
+        <a href="Tool-Files.zip" class="cta-btn" download>Download Tool</a>
+    </div>
+
+</div>
 
 </body>
 </html>
+
+
