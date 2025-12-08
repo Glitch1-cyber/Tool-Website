@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="anonymity.png" type="image/x-icon">
-    <meta name="keywords" content="WFake Identity Generator">
+    <link rel="shortcut icon" href="img/anonymity.png" type="image/x-icon">
     <title>Fake Identity Generator Tool</title>
     <style>
         /* Global Styles */
@@ -44,6 +43,30 @@
             font-size: 1.2rem;
             color: #bbb;
             margin-top: 10px;
+        }
+
+        /* New Link Button in Header */
+        header p a {
+            display: inline-block;
+            background-color: #e60000;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            margin-top: 20px;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        header p a:hover {
+            background-color: #b30000;
+            transform: scale(1.05);
+        }
+
+        header p a:active {
+            transform: scale(0.98);
         }
 
         /* Section Styles */
@@ -166,6 +189,8 @@
     <header>
         <h1>Fake Identity Generator Tool</h1>
         <p>Generate random fake identities, passwords, and more for testing, writing, or research purposes.</p>
+        <!-- New Link in the Header -->
+        <p><a href="AppIcon.html" class="cta-btn" target="_blank">Make App Icon(Tool)</a></p>
     </header>
 
     <!-- What the Tool Can Do Section -->
@@ -194,7 +219,7 @@
     <!-- Install Section -->
     <div class="section">
         <h2>How to Install the Tool</h2>
-        <p>To get started, simply download the ZIP file by clicking the Button below. The tool is in the ZIP file</p>
+        <p>To get started, simply download the tool by clicking the button below. Follow the installation instructions in the documentation.</p>
         <a href="Tool-Files.zip" class="cta-btn" download>Download Tool</a>
     </div>
 
@@ -202,7 +227,5 @@
 
 </body>
 </html>
-
-
 
 
