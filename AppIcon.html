@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/document.png" type="image/x-icon">
+    <title>Make App Icon - Fake Identity Generator</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 50px;
+            margin-top: 30px;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            color: #e60000;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #bbb;
+            margin-top: 10px;
+        }
+
+        header p a {
+            display: inline-block;
+            background-color: #e60000;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            margin-top: 20px;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        header p a:hover {
+            background-color: #b30000;
+            transform: scale(1.05);
+        }
+
+        header p a:active {
+            transform: scale(0.98);
+        }
+
+        .Container1, .Container2, .Container3 {
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 50px;
+        }
+
+        .FirstStep, .SecondStep, .ThirdStep {
+            font-size: 2.5rem;
+            color: #e60000;
+            font-weight: bold;
+        }
+
+        .FirstStepsParagraph, .SecondStepParagraph, .ThirdStepParagraph {
+            font-size: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .Container1 li, .Container2 li, .Container3 li {
+            margin-top: 20px;
+        }
+
+        .Container2, .Container3 {
+            margin-top: 50px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            header p a {
+                font-size: 1rem;
+                padding: 8px 16px;
+            }
+
+            .Container1, .Container2, .Container3 {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            .FirstStep, .SecondStep, .ThirdStep {
+                font-size: 2rem;
+            }
+
+            .FirstStepsParagraph, .SecondStepParagraph, .ThirdStepParagraph {
+                font-size: 18px;
+                margin-left: 20px;
+            }
+
+            .Container1 li, .Container2 li, .Container3 li {
+                margin-left: 20px;
+            }
+
+            img {
+                width: 90%;
+                max-width: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 0.9rem;
+            }
+
+            header p a {
+                font-size: 0.9rem;
+                padding: 6px 12px;
+            }
+
+            .FirstStep, .SecondStep, .ThirdStep {
+                font-size: 1.8rem;
+            }
+
+            .FirstStepsParagraph, .SecondStepParagraph, .ThirdStepParagraph {
+                font-size: 16px;
+                margin-left: 10px;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Documentation</h1>
+        <p>How to Convert a Python file to an App</p>
+        <p><a href="index.html" class="cta-btn" target="_blank">Home Page</a></p>
+    </header>
+
+    <div class="Container1">
+        <h1 class="FirstStep">Step 1:</h1>
+        <p class="FirstStepsParagraph">Installation</p>
+        <ul>
+            <li>Install Python from <a href="https://www.python.org">python.org</a></li>
+            <li>After installing python, Install the ZIP File from the Home page</li>
+            <li>It should look like this:</li>
+            <li><img src="img/ZipFilePic.png" alt="ZipFilePic"></li>
+        </ul>
+    </div>
+
+    <div class="Container2">
+        <h1 class="SecondStep">Step 2:</h1>
+        <p class="SecondStepParagraph">Creation</p>
+        <ul>
+            <li>Unzip(Extract) the Installed ZIP File to an empty folder in your Documents.</li>
+            <li><img src="img/UnzipFile.png" alt="Unzip"></li>
+            <li>You should see this in the folder:</li>
+            <li><img src="img/FolderWithFiles.png" alt="FolderWithFiles"></li>
+            <li>Now you need to create a Shortcut of the File 'TOOL.py'. Right-click the file and select 'Show more options', then click 'Create Shortcut'.</li>
+            <li><img src="img/CreateShortCut.png" alt="ShortCut"></li>
+            <li>After creating the shortcut, you should see two 'TOOL.py' files.</li>
+        </ul>
+    </div>
+
+    <div class="Container3">
+        <h1 class="ThirdStep">Step 3:</h1>
+        <p class="ThirdStepParagraph">Designing App</p>
+        <ul>
+            <li>Cut the shortcut of the file TOOL.py and paste it on your Desktop.</li>
+            <li>Right-click the file on your Desktop and click 'Properties'.</li>
+            <li>Click on 'Change Icon' and then click 'Browse'.</li>
+            <li>Select the 'anonymity.ico' icon from the folder you extracted the files to and click OK.</li>
+            <li>Finally, rename the app by right-clicking it and choosing 'Rename'. Give it the name you want.</li>
+        </ul>
+    </div>
+</body>
+</html>
